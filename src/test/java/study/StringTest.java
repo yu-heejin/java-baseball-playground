@@ -34,6 +34,13 @@ public class StringTest {
         assertThat(result).isEqualTo("1,2");
     }
 
+    /*
+        자주 사용하는 Exception의 경우 별도의 메서드를 제공한다.
+        assertThatIllegalArgumentException()
+        assertThatIllegalStateException()
+        assertThatIOException()
+        assertThatNullPointerException()
+     */
     @Test
     @DisplayName("charAt() 수행 시 특정 위치의 문자를 가져올 때 위치 값을 벗어나는 경우 예외 테스트")  // 테스트 메소드의 의도를 드러낸다.
     void case3WithThrownBy() {
