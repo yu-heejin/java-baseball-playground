@@ -25,4 +25,11 @@ public class StringTest {
         String[] result = "1,2".split(",");
         assertThat(result).containsExactly("1", "2");
     }
+
+    @Test
+    void case2() {
+        // substring 메소드를 활용한다.
+        String result = "(1,2)".substring(1, 4);
+        assertThat(result).isEqualTo("1,2");
+    }
 }
